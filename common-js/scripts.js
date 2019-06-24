@@ -231,8 +231,7 @@ function initMap() {
 
 	// Create a map object, and include the MapTypeId to add
 	// to the map type control.
-
-	var uluru = {lat: 56.946285, lng: 24.105078};
+	var uluru = {lat: 20.441977, lng: -87.286796};
     var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 4,
 		center: uluru
@@ -246,5 +245,4 @@ function initMap() {
 	});
 	//Associate the styled map with the MapTypeId and set it to display.
 	map.mapTypes.set('styled_map', styledMapType);
-	map.setMapTypeId('styled_map');
 }
