@@ -92,6 +92,21 @@
 	
 	.menu-nav-icon{ display: inline-block; float: right; }
 
+	/* ---------------------------------
+	6. STORY DETAILS AREA
+	--------------------------------- */
+
+	/* .story-details{ margin-left: 15px; overflow: visible; } */
+	/*  */
+	/* .story-details:after{ left: 0; margin-left: 0px; } */
+    /*  */
+	/* .w-detail{ width: 100%; padding: 0 0 0 30px; margin: 0 0 30px; } */
+    /*  */
+	/* .s-detail.left, */
+	/* .s-detail.right{ text-align: left; float: none; } */
+    /*  */
+	/* .s-detail.right:after, */
+	/* .s-detail.left:after{ left: 0; margin-left: -9px; } */
 	
 	
 	/* ---------------------------------
@@ -125,7 +140,7 @@
 	10. VIEW GALLERY
 	--------------------------------- */
 
-	.galery-area .gallery-btn{ margin-top: 10px; }
+	.gallery-area .gallery-btn{ margin-top: 10px; }
 
 	
 	/* ---------------------------------

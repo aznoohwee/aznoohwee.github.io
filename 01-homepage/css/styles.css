@@ -265,12 +265,38 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 /* ---------------------------------
 5. STORY AREA
 --------------------------------- */
-
+/*
 .story-area{ position: relative; z-index: 1; }
 
 .story-area:after{ content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
 	opacity: .8; background: url(../../images/Background_Circle.png); }
+    */
 
+.story-details{ overflow: hidden; position: relative; }
+
+.story-details:after{ content:''; position: absolute; top: 0; bottom: 0; left: 50%; margin-left: -.5px;
+	width: 1px; background: #ccc; }
+
+.s-detail{ width: 50%; padding: 0 50px; margin-bottom: 30px; position: relative; clear: both; margin-top: -40px; }
+
+.s-detail:first-child{ margin-top: 0; }
+
+.s-detail:last-child{ margin-bottom: 0; }
+
+.s-detail:after{ content:''; position: absolute; top: 0; height: 18px; width: 18px; border-radius: 20px;
+	z-index: 1; border: 1px solid #aaa; background: #fff; }
+
+.s-detail.right{ text-align: left;  float: right; }
+
+.s-detail.right:after{ left: 0; margin-left: -9px; }
+	
+.s-detail.left{ text-align: right;  float: left; }
+
+.s-detail.left:after{ right: 0; margin-right: -9px; }
+	
+.s-detail .title{ margin: 10px 0; }
+
+.s-detail .icon{ font-size: 3.5em; line-height: 1; color: #E45F74; }
 
 /* ---------------------------------
 6. REMAINING TIME
