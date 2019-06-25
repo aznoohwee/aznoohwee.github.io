@@ -233,7 +233,7 @@ function initMap() {
 	// to the map type control.
 	var uluru = {lat: 20.441977, lng: -87.286796};
     var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 8,
+		zoom: 15,
 		center: uluru
     });
 		
