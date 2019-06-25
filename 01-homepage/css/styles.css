@@ -247,8 +247,15 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 4. SLIDER
 --------------------------------- */
 
-.main-slider{ height: 100vh; position: relative; z-index: 1; 
-	background-image: url(../../images/ts-slider-1-large.jpg); background-size: cover; color: #fff; } 
+@media screen and (orientation: portrait) {
+    .main-slider{ height: 30vh; position: relative; z-index: 1;
+        background-image: url(../../images/ts-slider-1-large.jpg); background-size: cover; color: #fff; }
+}
+
+@media screen and (orientation: landscape) {
+    .main-slider{ height: 120vh; position: relative; z-index: 1;
+        background-image: url(../../images/ts-slider-1-large.jpg); background-size: cover; color: #fff; }
+}
 
 .main-slider:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
 	z-index: -1; background: rgba(0,0,0,.3); }
@@ -260,7 +267,6 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 .slider-content i.small-icon{ font-size: 2.5em; }
 
 .slider-content .title i{ transform: translateY(10px); font-size: .8em; color: #E45F74; }
-
 
 /* ---------------------------------
 5. STORY AREA
