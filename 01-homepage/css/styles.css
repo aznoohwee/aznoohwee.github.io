@@ -600,23 +600,46 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
     position:absolute;
 }
 
-@media screen and (orientation: portrait) {
-.rsvp-responsive{
-    overflow:hidden;
-    padding-top:120%;
-    padding-bottom:70%;
-    position:relative;
-    height:0;
-}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    /* tablets and desktop */
+    .rsvp-responsive{
+        overflow:hidden;
+        padding-bottom:70vh;
+        position:relative;
+        height:0;
+    }
 }
 
-@media screen and (orientation: landscape) {
-.rsvp-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    /* tablets and desktop */
+    .rsvp-responsive{
+        overflow:hidden;
+        padding-top:58vh;
+        position:relative;
+        height:0;
+    }
 }
+
+
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    /* phones */
+    .rsvp-responsive{
+        overflow:hidden;
+        padding-bottom:170vh;
+        position:relative;
+        height:0;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+    .rsvp-responsive{
+        overflow:hidden;
+        padding-top:90vh;
+        position:relative;
+        height:0;
+    }
 }
 
 /* .rsvp-responsive{ */
@@ -677,6 +700,5 @@ footer .email-area .submit-btn{ position: absolute; right: 0; height: 55px; widt
 	border-radius: 100px; background: #E55D73; color: #fff; }
 
 footer .email-area .submit-btn:hover{ background: #000; color: #E55D73; }
-
 
 footer .copyright{ padding: 20px 0 30px; }
