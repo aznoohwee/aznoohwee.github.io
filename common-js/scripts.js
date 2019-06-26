@@ -1,64 +1,5 @@
 
 	
-(function ($) {
-
-    "use strict";
-
-	// JQUERY LIGHT BOX
-	
-	if ( $.isFunction($.fn.fluidbox) ) {
-		$('a').fluidbox();
-	}
-
-	
-	$('a[href="#"]').on('click', function(event){
-		return;
-	});
-	
-	// COUNTDOWN TIME 
-	
-	countdownTime();
-	
-	
-	$('[data-nav-menu]').on('click', function(event){
-		
-		var $this = $(this),
-			visibleHeadArea = $this.data('nav-menu');
-		
-		$(visibleHeadArea).toggleClass('visible');
-		
-	});
-	
-	
-	var winWidth = $(window).width();
-	dropdownMenu(winWidth);
-	
-	$(window).on('resize', function(){
-		dropdownMenu(winWidth);
-		
-	});
-	
-	// Circular Progress Bar
-	
-	var isAnimated = false;
-	
-	
-})(jQuery);
-
-
-
-function countdownTime(){
-	
-	if(isExists('#clock')){
-		$('#clock').countdown('2020/06/13', function(event){
-			var $this = $(this).html(event.strftime(''
-				+ '<div class="time-sec"><span class="title">%D</span> days </div>'
-				+ '<div class="time-sec"><span class="title">%H</span> hours </div>'
-				+ '<div class="time-sec"><span class="title">%M</span> minutes </div>'
-				+ '<div class="time-sec"><span class="title">%S</span> seconds </div>'));
-		});
-	}
-}
 
 function dropdownMenu(winWidth){
 	
@@ -246,3 +187,82 @@ function initMap() {
 	//Associate the styled map with the MapTypeId and set it to display.
 	map.mapTypes.set('styled_map', styledMapType);
 }
+
+$(document).ready(
+    function(){
+	var my_posts = $("[rel=tooltip]");
+
+	var size = $(window).width();
+	for(i=0;i<my_posts.length;i++){
+		the_post = $(my_posts[i]);
+
+		if(the_post.hasClass('invert') && size >=767 ){
+			the_post.tooltip({ placement: 'left'});
+			the_post.css("cursor","pointer");
+		}else{
+			the_post.tooltip({ placement: 'rigth'});
+			the_post.css("cursor","pointer");
+		}
+	}
+
+(function ($) {
+
+    "use strict";
+
+	// JQUERY LIGHT BOX
+	
+	if ( $.isFunction($.fn.fluidbox) ) {
+		$('a').fluidbox();
+	}
+
+	
+	$('a[href="#"]').on('click', function(event){
+		return;
+	});
+	
+	// COUNTDOWN TIME 
+	
+	countdownTime();
+	
+	
+	$('[data-nav-menu]').on('click', function(event){
+		
+		var $this = $(this),
+			visibleHeadArea = $this.data('nav-menu');
+		
+		$(visibleHeadArea).toggleClass('visible');
+		
+	});
+	
+	
+	var winWidth = $(window).width();
+	dropdownMenu(winWidth);
+	
+	$(window).on('resize', function(){
+		dropdownMenu(winWidth);
+		
+	});
+	
+	// Circular Progress Bar
+	
+	var isAnimated = false;
+	
+	
+})(jQuery);
+
+
+
+function countdownTime(){
+	
+	if(isExists('#clock')){
+		$('#clock').countdown('2020/06/13', function(event){
+			var $this = $(this).html(event.strftime(''
+				+ '<div class="time-sec"><span class="title">%D</span> days </div>'
+				+ '<div class="time-sec"><span class="title">%H</span> hours </div>'
+				+ '<div class="time-sec"><span class="title">%M</span> minutes </div>'
+				+ '<div class="time-sec"><span class="title">%S</span> seconds </div>'));
+		});
+	}
+}
+});
+
