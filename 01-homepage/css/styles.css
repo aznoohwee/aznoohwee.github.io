@@ -370,13 +370,20 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 9. CONTACT AREA
 --------------------------------- */
 
-.contact-area{ position: relative; overflow: hidden; box-shadow: 1px 10px 40px rgba(0,0,0,.4); }
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
 
-.contact-area .contact-wrapper{ width: 50%; }
-
-.contact-area .map-area{ width: 100%; position: absolute; top: 0; bottom: 0; right: 0; }
-
-.contact-area .phone{ margin: 10px 0; font-size: 2em; color: #E45F74; }
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
 
 /* ---------------------------------
