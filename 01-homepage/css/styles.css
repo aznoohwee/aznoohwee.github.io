@@ -385,6 +385,21 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
     position:absolute;
 }
 
+.rsvp-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.rsvp-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 
 /* ---------------------------------
 10. VIEW GALLERY
