@@ -1,0 +1,83 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 26/06/2019 11:06
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[flat-icon]:before {
+  font-family: Flaticon;
+  content: attr(flat-icon);
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before {
+  font-family: Flaticon;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-checklist:before { content: "\f100"; }
+.flaticon-architecture-and-city:before { content: "\f101"; }
+.flaticon-cocktail:before { content: "\f102"; }
+.flaticon-camera:before { content: "\f103"; }
+.flaticon-dinner-table:before { content: "\f104"; }
+.flaticon-birthday-and-party:before { content: "\f105"; }
+.flaticon-image:before { content: "\f106"; }
+.flaticon-wedding-ring:before { content: "\f107"; }
+.flaticon-camera-1:before { content: "\f108"; }
+.flaticon-present:before { content: "\f109"; }
+.flaticon-pizza:before { content: "\f10a"; }
+.flaticon-coffee-cup:before { content: "\f10b"; }
+.flaticon-birthday-and-party-1:before { content: "\f10c"; }
+.flaticon-music-and-multimedia:before { content: "\f10d"; }
+.flaticon-food-and-restaurant:before { content: "\f10e"; }
+.flaticon-disco-ball:before { content: "\f10f"; }
+.flaticon-diving-mask:before { content: "\f110"; }
+.flaticon-video-tape:before { content: "\f111"; }
+.flaticon-credit-card:before { content: "\f112"; }
+.flaticon-suitcase:before { content: "\f113"; }
+.flaticon-bus:before { content: "\f114"; }
+.flaticon-meal:before { content: "\f115"; }
+.flaticon-calendar:before { content: "\f116"; }
+.flaticon-breakfast:before { content: "\f117"; }
+.flaticon-coconut:before { content: "\f118"; }
+.flaticon-diving-mask-1:before { content: "\f119"; }
+.flaticon-sports-and-competition:before { content: "\f11a"; }
+.flaticon-sports-and-competition-1:before { content: "\f11b"; }
+.flaticon-sports-and-competition-2:before { content: "\f11c"; }
+.flaticon-wedding-cake:before { content: "\f11d"; }
+.flaticon-food-and-restaurant-1:before { content: "\f11e"; }
+.flaticon-woman:before { content: "\f11f"; }
+.flaticon-man:before { content: "\f120"; }
