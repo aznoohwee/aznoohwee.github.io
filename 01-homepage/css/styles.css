@@ -665,6 +665,12 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .gallery-area .gallery-btn{ margin-top: 30px; }
 
+.gallery-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
 
 
 /* ---------------------------------
