@@ -36,26 +36,8 @@
 			
 			<ul class="main-menu visible-on-click" id="main-menu">
 				<li><a href="index.html">Home</a></li>
-				<!-- <li class="drop-down"><a href="#!">OUR STORIES<i class="icon icon-caret-down"></i></a> -->
-				<!--  -->
-				<!--     <ul class="drop-down-menu"> -->
-				<!--         <li><a href="#">FEATURED</a></li> -->
-				<!--         <li><a href="#">ABOUT</a></li> -->
-				<!--         <li class="drop-down"><a href="#!">CATEGORIES<i class="icon icon-caret-right"></i></a> -->
-				<!--             <ul class="drop-down-menu drop-down-inner"> -->
-				<!--                 <li><a href="#">FEATURED</a></li> -->
-				<!--                 <li><a href="#">ABOUT</a></li> -->
-				<!--                 <li><a href="#">CATEGORIES</a></li> -->
-				<!--             </ul> -->
-				<!--         </li> -->
-				<!--     </ul> -->
-				<!--      -->
-				<!-- </li> -->
-				
-				<!-- <li><a href="03-regular-page.html">THER WEDDING</a></li> -->
-				<!-- <li><a href="#">GALLERY</a></li> -->
 				<li><a href="04-booking.html">Book Now</a></li>
-				<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdO8UtwOwKHzVrbkioK3oREwrpi9NOBaA0m5_DXP4h3-rS72g/viewform?usp=sf_link">RSVP</a></li>
+				<li><a href="https://form.jotform.com/91874123777164">RSVP</a></li>
 			</ul><!-- main-menu -->
 			
 		</div><!-- container -->
@@ -238,10 +220,8 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3738.550584058281!2d-87.28795715004432!3d20.442567377906748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561508073946!5m2!1sen!2sus" width=100% height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
-    <div class="rsvp-responsive">
-        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdO8UtwOwKHzVrbkioK3oREwrpi9NOBaA0m5_DXP4h3-rS72g/viewform?embedded=true" width=100% height="909" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdO8UtwOwKHzVrbkioK3oREwrpi9NOBaA0m5_DXP4h3-rS72g/viewform?embedded=true" allowfullscreen>Loading...</iframe>
-    </div>
+	<iframe id="JotFormIFrame-91876105791162" title="Wedding RSVP Form" onload="window.parent.scrollTo(0,0)" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://form.jotform.com/91876105791162" frameborder="0" style="width: 1px; min-width: 100%; height:539px; border:none;" scrolling="no" > </iframe> <script type="text/javascript"> var ifr = document.getElementById("JotFormIFrame-91876105791162"); if(window.location.href && window.location.href.indexOf("?") > -1) { var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } window.handleIFrameMessage = function(e) { if (typeof e.data === 'object') { return; } var args = e.data.split(":"); if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) { return; } switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; case "loadScript": var src = args[1]; if (args.length > 3) { src = args[1] + ':' + args[2]; } var script = document.createElement('script'); script.src = src; script.type = 'text/javascript'; document.body.appendChild(script); break; case "exitFullscreen": if (window.document.exitFullscreen) window.document.exitFullscreen(); else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen(); else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen(); else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen(); else if (window.document.msExitFullscreen) window.document.msExitFullscreen(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } </script>
+
 
 	<footer>
 		<div class="container center-text">
@@ -250,14 +230,6 @@
 				<a class="logo" href="#"><img src="images/logo-black.png" alt="Logo Image"></a>
 				<i class="icon icon-star"></i>
 			</div>
-			
-			<ul class="social-icons">
-				<li><a href="#"><i class="icon icon-heart"></i></a></li>
-				<li><a href="#"><i class="icon icon-twitter"></i></a></li>
-				<li><a href="#"><i class="icon icon-instagram"></i></a></li>
-				<li><a href="#"><i class="icon icon-pinterest"></i></a></li>
-				<li><a href="#"><i class="icon icon-tripadvisor"></i></a></li>
-			</ul>
 
 			<ul class="footer-links">
 				<li><a href="#">HOME</a></li>
