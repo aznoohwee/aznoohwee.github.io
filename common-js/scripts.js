@@ -250,8 +250,6 @@ $(document).ready(
 	
 })(jQuery);
 
-
-
 function countdownTime(){
 	
 	if(isExists('#clock')){
@@ -265,4 +263,3 @@ function countdownTime(){
 	}
 }
 });
-
