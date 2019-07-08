@@ -39,7 +39,7 @@ body{ font-size: 16px; font-family: 'Bitter', serif; width: 100%; height: 100%; 
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; 
 	color: #333; }
 
-h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, input, button{ margin: 0; padding: 0; }
 
 h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
 
@@ -239,8 +239,8 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 4. SLIDER
 --------------------------------- */
 
-.main-slider{ height: 500px; position: relative; z-index: 1; 
-	background-image: url(../../images/counter-1-1600x600.jpg); background-size: cover; color: #fff; } 
+.main-slider{ height: 500px; position: relative; z-index: 1;
+	background-image: url(../../images/resort/beach.JPG); background-size: cover; color: #fff; }
 
 .main-slider:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
 	z-index: -1; background: rgba(0,0,0,.3); }
@@ -271,13 +271,17 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .content .quoto-area .name{ margin-top: 20px; color: #666; }
 
-.content .braidmaids-name li{ display: block; margin: 10px 0; }
+.content .amenities-name li{ display: block; margin: 10px 0; }
 
-.content .braidmaids-name li:first-child:before{ display: none; }
-
-.content .braidmaids-name li:before{ content:""; display: inline-block; height: 10px; width: 10px; 
+.content .amenities-name li:before{ content:""; display: inline-block; height: 10px; width: 10px;
 	border-radius: 10px; margin-right: 15px; border: 1px solid #888; }
 
+.content .amenities-name1 li{ display: block; margin: 10px 0; }
+
+.content .amenities-name1 li:first-child:before{ display: none; }
+
+.content .amenities-name1 li:before{ content:""; display: inline-block; height: 10px; width: 10px;
+	border-radius: 10px; margin-right: 15px; border: 1px solid #888; }
 
 /* ---------------------------------
 6. FOOTER
