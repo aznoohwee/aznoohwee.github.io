@@ -534,12 +534,23 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 7. WEDDING DETAILS AREA
 --------------------------------- */
 
-.wedding-details{ overflow: hidden; position: relative; }
+.w-details-area { position: relative; z-index: 1; }
+.w-details-area:after{ content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
+    opacity: .8; background: url(../../images/Background_Circle.png); }
 
+.wedding-box {
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 15px 40px rgba(0,0,0,.3);
+    background: #fff;
+}
+.wedding-details{
+    overflow: hidden;
+    position: relative;
+}
 .wedding-details:after{ content:''; position: absolute; top: 0; bottom: 0; left: 50%; margin-left: -.5px;
-	width: 1px; background: #ccc; }
+    width: 1px; background: #ccc; }
 
-/*.w-detail{ width: 50%; padding: 0 50px; margin-bottom: 30px; position: relative; clear: both; margin-top: -40px; }*/
 .w-detail{ width: 50%; padding: 0 50px; margin-bottom: 30px; position: relative; clear: both; margin-top: -40px; }
 
 .w-detail:first-child{ margin-top: 0; }
@@ -552,11 +563,11 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 .w-detail.right{ text-align: left;  float: right; }
 
 .w-detail.right:after{ left: 0; margin-left: -9px; }
-	
+
 .w-detail.left{ text-align: right;  float: left; }
 
 .w-detail.left:after{ right: 0; margin-right: -9px; }
-	
+
 .w-detail .title{ margin: 10px 0; }
 
 .w-detail .icon{ font-size: 3.5em; line-height: 1; color: #E45F74; }
