@@ -249,7 +249,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 --------------------------------- */
 
 @media screen and (orientation: portrait) {
-    .main-slider{ height: 40vh; position: relative; z-index: 1;
+    .main-slider{ height: 50vh; position: relative; z-index: 1;
         background-image: url(../../images/ts-slider-1-large.jpg); background-size: cover; color: #fff; }
 }
 
