@@ -253,7 +253,7 @@ $(document).ready(
 function countdownTime(){
 	
 	if(isExists('#clock')){
-		$('#clock').countdown('2020/06/13', function(event){
+		$('#clock').countdown('2021/06/12', function(event){
 			var $this = $(this).html(event.strftime(''
              + '<div class="time-sec"><span class="title">%D days %H:%M:%S</span></div>'));
 		});
